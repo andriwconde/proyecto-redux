@@ -53,8 +53,8 @@ class Autocomplete extends Component {
                             this.setState({ isOpen: true });
                         }
                     }}
-                    onKeyPress={(event) => {
-                        if (event.key === 'Enter' && text) {
+                    onClick={() => {
+                        if (text) {
                             onChangeSelection(text);
                         }
                     }}
