@@ -1,4 +1,4 @@
-const defaultState = 0
+const defaultState = []
 
 function reducer(state = defaultState, {type,payload}){
     switch(type){
