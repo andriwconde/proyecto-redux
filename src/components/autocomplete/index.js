@@ -58,6 +58,11 @@ class Autocomplete extends Component {
                             onChangeSelection(text);
                         }
                     }}
+                    onKeyPress={(event) => {
+                        if (event.key === 'Enter' && text) {
+                            onChangeSelection(text);
+                        }
+                    }}
                 />
                 {isOpen &&
                 <Paper className="container-results" square>

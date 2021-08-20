@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import { connect } from 'react-redux'
 import Page from './page'
-import { whithRouter, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
 class Results extends Component{
     render(){
@@ -12,7 +12,6 @@ class Results extends Component{
             results={results}
             goTo={(path)=>{
                 this.props.history.push(path)
-                //aca me quede
             }}
             />
             
